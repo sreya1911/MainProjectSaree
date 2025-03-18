@@ -1,0 +1,114 @@
+
+i{
+  margin: 4px;
+  color: black;
+}
+
+.bi-heart:hover{
+  color: red;
+  
+}
+.box {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.menu-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  /* list-style-type: none; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* list-style: none; */
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.menu.open {
+  display: block;
+}
+ .menu a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  margin: 5px 0;
+  margin-right: 20px;
+  list-style-type: none;
+  position: relative;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: beige;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu li:hover ul {
+  display: block;
+}
+.menu li:hover >a{
+  color: red;
+}
+
+.menu li ul li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu li ul {
+    position: static;
+    box-shadow: none;
+  }
+
+  .menu li:hover ul {
+    display: none;
+  }
+
+  .menu li.open ul {
+    display: block;
+  }
+}
