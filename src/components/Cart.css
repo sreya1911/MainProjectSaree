@@ -5,7 +5,8 @@
     background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Ensure the cart is at the bottom */
+    justify-content: flex;
+     /* Ensure the cart is at the bottom */
     min-height: 100vh; /* Ensure the container takes the full height of the viewport */
   }
   

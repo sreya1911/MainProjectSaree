@@ -31,7 +31,7 @@ const Cart = () => {
 
   return (
     <div className="cart-container">
-      <h1>Shopping Cart</h1>
+      <h1 style={{top:0}}>Shopping Cart</h1>
       {notification && <Alert variant="success">{notification}</Alert>}
       <Row>
         {cart.length > 0 ? (
