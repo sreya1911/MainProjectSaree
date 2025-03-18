@@ -23,7 +23,23 @@ const Carddisplay = ({ category, subcategory }) => {
         <Row>
           {itemsToDisplay.map((item, index) => (
             <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
+
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src={require(`../assets/${item.images[0]}`)}
+                  alt={item.name}
+                  style={{ width: "100%", height: "300px", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>Price: ₹{item.price}</Card.Text>
+                  <Button onClick={() => addToCart(item)}>Add to Cart</Button>
+                </Card.Body>
+              </Card>
+
               <ProductCard product={item}/>
+
             </Col>
           ))}
         </Row>

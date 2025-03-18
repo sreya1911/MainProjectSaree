@@ -7,6 +7,7 @@ import './Footer.css'; // Assuming you have a CSS file for styling
 
 const Footer = () => {
     return (
+       <div className='foot'>
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-section">
@@ -47,6 +48,7 @@ const Footer = () => {
                 <p>&copy; 2025 Saree E-Commerce. All rights reserved.</p>
             </div>
         </footer>
+        </div> 
     );
 };
 
