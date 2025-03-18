@@ -90,7 +90,7 @@ const Buy = () => {
                 <Form.Group controlId="formCVV">
                   <Form.Label>CVV</Form.Label>
                   <Form.Control
-                    type="text"
+                    type="number"
                     placeholder="Enter CVV"
                     value={cvv}
                     onChange={(e) => setCvv(e.target.value)}

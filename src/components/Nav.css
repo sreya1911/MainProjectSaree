@@ -1,20 +1,20 @@
-
-i{
+/* General Icon Styles */
+i {
   margin: 4px;
   color: black;
 }
 
-.bi-heart:hover{
+.bi-heart:hover {
   color: red;
-  
 }
+
+/* Box Class */
 .box {
   position: relative;
   z-index: 1;
 }
 
-
-
+/* Menu Toggle Button */
 .menu-toggle {
   background-color: #333;
   color: white;
@@ -24,15 +24,13 @@ i{
   display: none;
 }
 
+/* Menu Styles */
 .menu {
-  /* list-style-type: none; */
   padding: 0;
   margin: 0;
   display: flex;
-  /* list-style: none; */
-  background-color: beige;
-  display: flex;
   justify-content: center;
+  background-color: beige;
   text-decoration: none;
   color: black;
 }
@@ -40,7 +38,8 @@ i{
 .menu.open {
   display: block;
 }
- .menu a{
+
+.menu a {
   text-decoration: none;
   color: black;
 }
@@ -67,7 +66,8 @@ i{
 .menu li:hover ul {
   display: block;
 }
-.menu li:hover >a{
+
+.menu li:hover > a {
   color: red;
 }
 
@@ -76,15 +76,21 @@ i{
   white-space: nowrap;
 }
 
+/* Logout Button */
 .logout-button {
   background-color: #f44336;
   color: white;
   border: none;
   padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-/* Styles for mobile screens */
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* Styles for Mobile Screens */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -111,4 +117,42 @@ i{
   .menu li.open ul {
     display: block;
   }
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-icons a,
+.nav-icons button {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-icons i {
+  font-size: 1.2rem;
 }
