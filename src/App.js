@@ -14,6 +14,8 @@ import "./App.css";
 import WishlistPage from "./components/WishlistPage";
 import { WishlistProvider } from "./components/WishlistContext";
 import  Footer from './components/Footer';
+import Buy from "./components/Buy";
+
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
             <Route path="/category/:categoryName" element={<Category />} />
             <Route path="/category/:categoryName/subcategory/:subcategoryName" element={<Category />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path='/buy' element={<Buy />}/>
             <Route path="/login" element={<Login />} />
             <Route path="/wishlist" element={<WishlistPage />} />
           </Routes>
