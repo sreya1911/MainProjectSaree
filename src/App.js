@@ -11,8 +11,12 @@ import { CartProvider } from "./components/CartContext";
 import Login from "./components/Login";
 import CartModal from "./components/CartModal";
 import "./App.css";
+<<<<<<< HEAD
 import WishlistPage from "./components/WishlistPage";
 import { WishlistProvider } from "./components/WishlistContext";
+=======
+import  Footer from './components/Footer';
+>>>>>>> ff6c44ce3969e5218d251507afa95207af00e08f
 
 function App() {
   return (
@@ -31,6 +35,7 @@ function App() {
           </Routes>
         </WishlistProvider>
       </CartProvider>
+      <Footer/>
     </AuthProvider>
   );
 }
