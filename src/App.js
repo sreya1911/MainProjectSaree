@@ -11,6 +11,7 @@ import { CartProvider } from "./components/CartContext";
 import Login from "./components/Login";
 import CartModal from "./components/CartModal";
 import "./App.css";
+import  Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </CartProvider>
+      <Footer/>
     </AuthProvider>
   );
 }
