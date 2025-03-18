@@ -26,7 +26,7 @@ const Carddisplay = ({ category, subcategory }) => {
               <Card>
                 <Card.Img
                   variant="top"
-                  src={`${process.env.PUBLIC_URL}/images/${item.images[0]}`}
+                  src={require(`../assets/${item.images[0]}`)}
                   alt={item.name}
                   style={{ width: "100%", height: "300px", objectFit: "cover" }}
                 />

@@ -2,7 +2,7 @@
   {
     "name": "Silk",
     "description": "Description for Silks",
-    "images": ["path/to/silk-image1.jpg", "path/to/silk-image2.jpg"],
+    "images": ["anarkali.jpg"],
     "subcategories": [
       {
         "name": "Softsilk",
@@ -10,14 +10,13 @@
           {
             "name": "SoftSilk1",
             "price": 100,
-            "images": ["path/to/soft-silk-image1.jpg"]
+            "images": ["anarkali.jpg"]
           },
           {
             "name": "SoftSilk2",
             "price": 110,
             "images": [
-              "path/to/soft-silk-image3.jpg",
-              "path/to/soft-silk-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -29,16 +28,14 @@
             "name": "Kanjivaram1",
             "price": 200,
             "images": [
-              "path/to/kanjivaram-image1.jpg",
-              "path/to/kanjivaram-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Kanjivaram2",
             "price": 210,
             "images": [
-              "path/to/kanjivaram-image3.jpg",
-              "path/to/kanjivaram-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -50,16 +47,14 @@
             "name": "RawSilk1",
             "price": 150,
             "images": [
-              "path/to/raw-silk-image1.jpg",
-              "path/to/raw-silk-image2.jpg"
+             "anarkali.jpg"
             ]
           },
           {
             "name": "RawSilk2",
             "price": 160,
             "images": [
-              "path/to/raw-silk-image3.jpg",
-              "path/to/raw-silk-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -71,16 +66,14 @@
             "name": "KalamkariPrint1",
             "price": 120,
             "images": [
-              "path/to/kalamkari-print-image1.jpg",
-              "path/to/kalamkari-print-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "KalamkariPrint2",
             "price": 130,
             "images": [
-              "path/to/kalamkari-print-image3.jpg",
-              "path/to/kalamkari-print-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -92,16 +85,14 @@
             "name": "Mysoresilk1",
             "price": 180,
             "images": [
-              "path/to/mysore-silk-image1.jpg",
-              "path/to/mysore-silk-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Mysoresilk2",
             "price": 190,
             "images": [
-              "path/to/mysore-silk-image3.jpg",
-              "path/to/mysore-silk-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -111,7 +102,7 @@
   {
     "name": "Cotton",
     "description": "Description for Cotton",
-    "images": ["path/to/cotton-image1.jpg", "path/to/cotton-image2.jpg"],
+    "images": ["anarkali.jpg"],
     "subcategories": [
       {
         "name": "Khadi",
@@ -119,12 +110,12 @@
           {
             "name": "Khadi1",
             "price": 80,
-            "images": ["path/to/khadi-image1.jpg", "path/to/khadi-image2.jpg"]
+            "images": ["anarkali.jpg"]
           },
           {
             "name": "Khadi2",
             "price": 85,
-            "images": ["path/to/khadi-image3.jpg", "path/to/khadi-image4.jpg"]
+            "images": ["anarkali.jpg"]
           }
         ]
       },
@@ -135,16 +126,14 @@
             "name": "Bengali1",
             "price": 90,
             "images": [
-              "path/to/bengali-image1.jpg",
-              "path/to/bengali-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Bengali2",
             "price": 95,
             "images": [
-              "path/to/bengali-image3.jpg",
-              "path/to/bengali-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -155,12 +144,12 @@
           {
             "name": "Ikkat1",
             "price": 110,
-            "images": ["path/to/ikkat-image1.jpg", "path/to/ikkat-image2.jpg"]
+            "images": ["anarkali.jpg"]
           },
           {
             "name": "Ikkat2",
             "price": 115,
-            "images": ["path/to/ikkat-image3.jpg", "path/to/ikkat-image4.jpg"]
+            "images": ["anarkali.jpg"]
           }
         ]
       },
@@ -171,16 +160,14 @@
             "name": "Chanderi1",
             "price": 130,
             "images": [
-              "path/to/chanderi-sarees-image1.jpg",
-              "path/to/chanderi-sarees-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Chanderi2",
             "price": 135,
             "images": [
-              "path/to/chanderi-sarees-image3.jpg",
-              "path/to/chanderi-sarees-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -192,16 +179,14 @@
             "name": "Kalamkari1",
             "price": 100,
             "images": [
-              "path/to/kalamkari-image1.jpg",
-              "path/to/kalamkari-image2.jpg"
+             "anarkali.jpg"
             ]
           },
           {
             "name": "Kalamkari2",
             "price": 105,
             "images": [
-              "path/to/kalamkari-image3.jpg",
-              "path/to/kalamkari-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -213,16 +198,14 @@
             "name": "Madhubani1",
             "price": 140,
             "images": [
-              "path/to/madhubani-image1.jpg",
-              "path/to/madhubani-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Madhubani2",
             "price": 145,
             "images": [
-              "path/to/madhubani-image3.jpg",
-              "path/to/madhubani-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -232,7 +215,7 @@
   {
     "name": "Regional",
     "description": "Description for Regional",
-    "images": ["path/to/regional-image1.jpg", "path/to/regional-image2.jpg"],
+    "images": ["anarkali.jpg"],
     "subcategories": [
       {
         "name": "Sambalpuri",
@@ -241,16 +224,14 @@
             "name": "Sambalpuri1",
             "price": 160,
             "images": [
-              "path/to/sambalpuri-image1.jpg",
-              "path/to/sambalpuri-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Sambalpuri2",
             "price": 165,
             "images": [
-              "path/to/sambalpuri-image3.jpg",
-              "path/to/sambalpuri-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -263,16 +244,14 @@
             "price": 220,
 
             "images": [
-              "path/to/kanjivaram-sarees-image1.jpg",
-              "path/to/kanjivaram-sarees-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Kanjivaram2",
             "price": 225,
             "images": [
-              "path/to/kanjivaram-sarees-image3.jpg",
-              "path/to/kanjivaram-sarees-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -284,16 +263,14 @@
             "name": "Bengali1",
             "price": 190,
             "images": [
-              "path/to/bengali-sarees-image1.jpg",
-              "path/to/bengali-sarees-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Bengali2",
             "price": 195,
             "images": [
-              "path/to/bengali-sarees-image3.jpg",
-              "path/to/bengali-sarees-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -305,16 +282,14 @@
             "name": "Mysore1",
             "price": 210,
             "images": [
-              "path/to/mysore-sarees-image1.jpg",
-              "path/to/mysore-sarees-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Mysore2",
             "price": 215,
             "images": [
-              "path/to/mysore-sarees-image3.jpg",
-              "path/to/mysore-sarees-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -326,16 +301,14 @@
             "name": "KarnatakaSarees1",
             "price": 170,
             "images": [
-              "path/to/karnataka-sarees-image1.jpg",
-              "path/to/karnataka-sarees-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "KarnatakaSarees2",
             "price": 175,
             "images": [
-              "path/to/karnataka-sarees-image3.jpg",
-              "path/to/karnataka-sarees-image4.jpg"
+             "anarkali.jpg"
             ]
           }
         ]
@@ -345,7 +318,7 @@
   {
     "name": "Salwar",
     "description": "Description for Salwar",
-    "images": ["path/to/salwar-image1.jpg", "path/to/salwar-image2.jpg"],
+    "images": ["anarkali.jpg"],
     "subcategories": [
       {
         "name": "SangeetSalwar",
@@ -354,16 +327,14 @@
             "name": "SangeetSalwar1",
             "price": 130,
             "images": [
-              "path/to/sangeet-salwar-image1.jpg",
-              "path/to/sangeet-salwar-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "SangeetSalwar2",
             "price": 135,
             "images": [
-              "path/to/sangeet-salwar-image3.jpg",
-              "path/to/sangeet-salwar-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -375,16 +346,14 @@
             "name": "FestiveSalwar1",
             "price": 140,
             "images": [
-              "path/to/festive-salwar-image1.jpg",
-              "path/to/festive-salwar-image2.jpg"
+             "anarkali.jpg"
             ]
           },
           {
             "name": "FestiveSalwar2",
             "price": 145,
             "images": [
-              "path/to/festive-salwar-image3.jpg",
-              "path/to/festive-salwar-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -396,16 +365,14 @@
             "name": "Mehindisalwar1",
             "price": 120,
             "images": [
-              "path/to/mehindi-salwar-image1.jpg",
-              "path/to/mehindi-salwar-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Mehindisalwar2",
             "price": 125,
             "images": [
-              "path/to/mehindi-salwar-image3.jpg",
-              "path/to/mehindi-salwar-image4.jpg"
+             "anarkali.jpg"
             ]
           }
         ]
@@ -415,7 +382,7 @@
   {
     "name": "Lehenga",
     "description": "Description for Lehenga",
-    "images": ["path/to/lehenga-image1.jpg", "path/to/lehenga-image2.jpg"],
+    "images": ["anarkali.jpg"],
     "subcategories": [
       {
         "name": "Weddinglehenga",
@@ -424,16 +391,14 @@
             "name": "Weddinglehenga1",
             "price": 300,
             "images": [
-              "path/to/wedding-lehenga-image1.jpg",
-              "path/to/wedding-lehenga-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Weddinglehenga2",
             "price": 310,
             "images": [
-              "path/to/wedding-lehenga-image3.jpg",
-              "path/to/wedding-lehenga-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -445,16 +410,14 @@
             "name": "Reception1",
             "price": 250,
             "images": [
-              "path/to/reception-lehenga-image1.jpg",
-              "path/to/reception-lehenga-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Reception2",
             "price": 260,
             "images": [
-              "path/to/reception-lehenga-image3.jpg",
-              "path/to/reception-lehenga-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]
@@ -466,16 +429,14 @@
             "name": "Partyware1",
             "price": 200,
             "images": [
-              "path/to/partyware-lehenga-image1.jpg",
-              "path/to/partyware-lehenga-image2.jpg"
+              "anarkali.jpg"
             ]
           },
           {
             "name": "Partyware2",
             "price": 210,
             "images": [
-              "path/to/partyware-lehenga-image3.jpg",
-              "path/to/partyware-lehenga-image4.jpg"
+              "anarkali.jpg"
             ]
           }
         ]

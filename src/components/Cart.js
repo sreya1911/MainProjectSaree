@@ -14,7 +14,7 @@ const Cart = () => {
         {cart.map((product, index) => (
           <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
             <Card>
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/${product.image}`} alt={product.name} 
+              <Card.Img variant="top"  src={require(`../assets/${product.images[0]}`)}  alt={product.name} 
               style={{ width: "100%", height: "350px", objectFit: "cover" }}/>
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
