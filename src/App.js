@@ -11,20 +11,25 @@ import { CartProvider } from "./components/CartContext";
 import Login from "./components/Login";
 import CartModal from "./components/CartModal";
 import "./App.css";
+import WishlistPage from "./components/WishlistPage";
+import { WishlistProvider } from "./components/WishlistContext";
 
 function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <ImpNav />
-        <CartModal />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/category/:categoryName" element={<Category />} />
-          <Route path="/category/:categoryName/subcategory/:subcategoryName" element={<Category />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
+        <WishlistProvider>
+          <ImpNav />
+          <CartModal />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/category/:categoryName" element={<Category />} />
+            <Route path="/category/:categoryName/subcategory/:subcategoryName" element={<Category />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/wishlist" element={<WishlistPage />} />
+          </Routes>
+        </WishlistProvider>
       </CartProvider>
     </AuthProvider>
   );
