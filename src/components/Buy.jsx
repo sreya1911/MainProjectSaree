@@ -51,7 +51,7 @@ const Buy = () => {
                 <Form.Group controlId="formCardNumber">
                   <Form.Label>Card Number</Form.Label>
                   <Form.Control
-                    type="text"
+                    type="number"
                     placeholder="Enter card number"
                     value={cardNumber}
                     onChange={(e) => setCardNumber(e.target.value)}

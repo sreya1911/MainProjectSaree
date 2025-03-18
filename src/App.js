@@ -22,8 +22,10 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <WishlistProvider>
+          <div id="root">
           <ImpNav />
           <CartModal />
+          <div className="main-content"> 
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/category/:categoryName" element={<Category />} />
@@ -33,6 +35,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/wishlist" element={<WishlistPage />} />
           </Routes>
+          </div>
+          </div>
         </WishlistProvider>
       </CartProvider>
       <Footer/>
