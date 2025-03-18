@@ -53,6 +53,7 @@ const Cart = () => {
                       onClick={() => removeFromCart(product)}
                     />
                   </div>
+                  <Button variant="warning" onClick={() => handleBuy(product)} className="buy-button">Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>

@@ -3,6 +3,10 @@
 .cart-container {
     padding: 20px;
     background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensure the cart is at the bottom */
+    min-height: 100vh; /* Ensure the container takes the full height of the viewport */
   }
   
   .cart-item {
@@ -24,6 +28,15 @@
     color: #111;
     background-color: #f0c14b;
     border-color: #a88734 #9c7e31 #846a29;
+  }
+  
+  .buy-button {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #ff9900;
+    border-color: #ff9900;
+    width: 100%;
+    text-align: center;
   }
   
   .quantity-control {
