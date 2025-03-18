@@ -23,7 +23,7 @@ const Carddisplay = ({ category, subcategory }) => {
         <Row>
           {itemsToDisplay.map((item, index) => (
             <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
-< HEAD
+
               <Card>
                 <Card.Img
                   variant="top"
