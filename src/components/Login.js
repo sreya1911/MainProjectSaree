@@ -21,38 +21,49 @@ function Login() {
       return;
     }
 
-    // Simulate login logic
-    if (email === 'user@example.com' && password === 'password') {
-      login(email);
-      navigate('/');
-    } else {
-      setError('Invalid email or password.');
+    // Email validation
+    if (!email.includes('@gmail.com')) {
+      setError('Email must be a valid @gmail.com address.');
+      return;
     }
+
+    // Password validation
+    if (password.length < 6) {
+      setError('Password must contain at least 6 characters.');
+      return;
+    }
+
+    // Simulate login logic
+    login(email);
   };
 
   return (
     <div className="auth-container">
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        {error && <p className="error">{error}</p>}
-        <div className="form-group">
-          <label>Email:</label>
-          <input 
-            type="email" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-          />
-        </div>
-        <div className="form-group">
-          <label>Password:</label>
-          <input 
-            type="password" 
-            value={password} 
-            onChange={(e) => setPassword(e.target.value)} 
-          />
-        </div>
-        <button type="submit" className="auth-button">Login</button>
-      </form>
+      <div className="auth-card">
+        <h2>Login</h2>
+        <form onSubmit={handleLogin}>
+          {error && <p className="error">{error}</p>}
+          <div className="form-group">
+            <label>Email:</label>
+            <input 
+              type="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              className="form-control"
+            />
+          </div>
+          <div className="form-group">
+            <label>Password:</label>
+            <input 
+              type="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              className="form-control"
+            />
+          </div>
+          <button type="submit" className="auth-button">Login</button>
+        </form>
+      </div>
     </div>
   );
 }
