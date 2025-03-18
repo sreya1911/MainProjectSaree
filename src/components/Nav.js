@@ -17,7 +17,7 @@ const Navone = () => {
 
   return (
     <nav className="navbar bg-body-tertiary">
-      <Link to="/" className="navbar-brand m-auto">
+      <Link to="/" className="navbar-brand">
         Brandname
       </Link>
       <div className="nav-icons">
@@ -30,7 +30,7 @@ const Navone = () => {
         {user ? (
           <>
             <span>{user}</span>
-            <button onClick={handleLogout} className="logout-button">
+            <button onClick={handleLogout} className="logout-button bg-danger">
               Logout
             </button>
           </>
