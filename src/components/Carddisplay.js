@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
 import { useCart } from "./CartContext";
 import "./All.css";
-import ProductCard from "./Card";
+
 
 const Carddisplay = ({ category, subcategory }) => {
   const { addToCart } = useCart();
@@ -38,7 +38,7 @@ const Carddisplay = ({ category, subcategory }) => {
                 </Card.Body>
               </Card>
 
-              <ProductCard product={item}/>
+              { <ProductCard product={item}/> }
 
             </Col>
           ))}
