@@ -14,7 +14,7 @@ const WishlistPage = () => {
     removeFromWishlist(product)
   }
   return (
-    <div>
+    <div className="container">
       <h1 style={{textAlign: 'center', marginTop: '10px'}}>My Wishlist</h1>
       <Row>
         {wishlist.length === 0 ? (
@@ -34,6 +34,7 @@ const WishlistPage = () => {
       onClick={() => removeFromWishlist(product)}
       style={{
         position: 'absolute',
+        // width: '100%',
         top: '10px',
         right: '10px',
         color: 'black',
@@ -49,9 +50,10 @@ const WishlistPage = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          width: '24px',
+
+          // width: '100%',
           height: '24px',
-          borderRadius: '50%',
+          // borderRadius: '50%',
           border: '1px solid black',
         }}
 >

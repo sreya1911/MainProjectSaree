@@ -11,6 +11,7 @@ const CarouselMain = () => {
       title: "The Chic Boutique",
       caption: "Where Quality Matters",
       className: "slide-1",
+      link :"/category/silk"
     },
     {
       src: require("../assets/mainimg.jpg"),
@@ -18,6 +19,7 @@ const CarouselMain = () => {
       title: "Elegant Styles",
       caption: "Discover the latest trends",
       className: "slide-2",
+      link:"/category/cotton"
     },
     {
       src: "https://media.istockphoto.com/id/105680592/photo/indian-scarves-in-many-colors-for-display.jpg?s=612x612&w=0&k=20&c=eGIl-xZv6K7miZSCQjvezFqSoas3H6uVZ4OR7cAhDxs=",
@@ -25,6 +27,7 @@ const CarouselMain = () => {
       title: "Celebrate Holi in Style",
       caption: "Flat 30% off",
       className: "slide-4",
+      link:"/category/regional"
     },
 
     {
@@ -34,6 +37,7 @@ const CarouselMain = () => {
       caption:
         "Inspired by the nine emotions of life,where every emotion is not just felt but adorned",
       className: "slide-3",
+      link:"/category/salwar"
     },
     {
       src: "https://www.parisera.com/cdn/shop/files/DSC_4908-1_Copy.jpg?v=1724928476",
@@ -41,6 +45,7 @@ const CarouselMain = () => {
       title: "Shaadi Carnival",
       caption: "Flat 20% off and more",
       className: "slide-5",
+      link:"/category/lehenga"
     },
   ];
   return (
@@ -56,7 +61,7 @@ const CarouselMain = () => {
           <Carousel.Caption>
             <h3>{item.title}</h3>
             <p>{item.caption}</p>
-            <Button variant="light">Shop Now</Button>
+            <Button variant="light"href={item.link} >Shop Now</Button>
           </Carousel.Caption>
         </Carousel.Item>
       ))}
