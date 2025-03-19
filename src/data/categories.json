@@ -10,13 +10,13 @@
           {
             "name": "SoftSilk1",
             "price": 100,
-            "images": ["anarkali.jpg"]
+            "images": ["softsilk1.jpg"]
           },
           {
             "name": "SoftSilk2",
             "price": 110,
             "images": [
-              "anarkali.jpg"
+              "softsilk2.jpg"
             ]
           }
         ]
@@ -28,14 +28,14 @@
             "name": "Kanjivaram1",
             "price": 200,
             "images": [
-              "anarkali.jpg"
+              "kanjivaram1.jpg"
             ]
           },
           {
             "name": "Kanjivaram2",
             "price": 210,
             "images": [
-              "anarkali.jpg"
+              "kanjivaram2.jpg"
             ]
           }
         ]
@@ -47,14 +47,14 @@
             "name": "RawSilk1",
             "price": 150,
             "images": [
-             "anarkali.jpg"
+             "rawsilk1.jpg"
             ]
           },
           {
             "name": "RawSilk2",
             "price": 160,
             "images": [
-              "anarkali.jpg"
+              "rawsilk2.jpg"
             ]
           }
         ]
@@ -66,14 +66,14 @@
             "name": "KalamkariPrint1",
             "price": 120,
             "images": [
-              "anarkali.jpg"
+              "kalamkari1.jpg"
             ]
           },
           {
             "name": "KalamkariPrint2",
             "price": 130,
             "images": [
-              "anarkali.jpg"
+              "kalamkari2.jpg"
             ]
           }
         ]
@@ -85,14 +85,14 @@
             "name": "Mysoresilk1",
             "price": 180,
             "images": [
-              "anarkali.jpg"
+              "mysoresilk1.jpg"
             ]
           },
           {
             "name": "Mysoresilk2",
             "price": 190,
             "images": [
-              "anarkali.jpg"
+              "mysoresilk2.webp"
             ]
           }
         ]

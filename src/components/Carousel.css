@@ -1,0 +1,55 @@
+.carousel-caption h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.carousel-caption .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.slide-1 .carousel-caption {
+  color: #f36161;
+  text-align: right;
+}
+
+.slide-2 .carousel-caption {
+  color: #fcfcfe;
+}
+
+.slide-3 .carousel-caption {
+  color: hsla(0, 80%, 36%, 0.696); /* Blue text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.slide-4 .carousel-caption {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  color: #FFD700;
+  padding: 20px;
+  text-Align: right;
+  font-Family: Arial, sans-serif;
+  font-Weight: bold;
+  text-Shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                
+}
+.slide-5 .carousel-caption {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  color: #efdfbb;
+  padding: 20px;
+  text-Align: right;
+  font-Family: Arial, sans-serif;
+  font-Weight: bold;
+  text-Shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
