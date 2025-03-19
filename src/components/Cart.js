@@ -32,7 +32,7 @@ const Cart = () => {
   return (
     <div className="cart-container">
 
-      <h1 style={{marginTop: '10px', textAlign: 'center'}}>Shopping Cart</h1>
+      <h1 style={{top: 0, textAlign: 'center'}}>Shopping Cart</h1>
 
       {notification && <Alert variant="success">{notification}</Alert>}
       <Row>
