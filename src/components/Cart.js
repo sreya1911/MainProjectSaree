@@ -62,7 +62,7 @@ const Cart = () => {
                       Total: ${(product.price * product.quantity).toFixed(2)}
                     </Card.Text>
                   </Card.Body>
-                  <div className="d-flex flex-column align-items-start">
+                  <div className="d-flex flex-column align-items-start ml-3">
                     <div className="quantity-control">
                       <Button
                         variant="light"
@@ -96,7 +96,7 @@ const Cart = () => {
           ))
         ) : (
           <Col xs={12}>
-            <p style={{display:'flex',justifyContent:'center',alignItems:'flex-start'}}>Your cart is empty.</p>
+            <p style={{textAlign:'center'}}>Your cart is empty.</p>
           </Col>
         )}
       </Row>

@@ -14,7 +14,7 @@ const WishlistPage = () => {
     removeFromWishlist(product)
   }
   return (
-    <div>
+    <div className="container">
       <h1 style={{textAlign: 'center', marginTop: '10px'}}>My Wishlist</h1>
       <Row>
         {wishlist.length === 0 ? (
