@@ -124,12 +124,12 @@
           {
             "name": "Khadi1",
             "price": 80,
-            "images": ["anarkali.jpg"]
+            "images": ["khadi1.png"]
           },
           {
             "name": "Khadi2",
             "price": 85,
-            "images": ["anarkali.jpg"]
+            "images": ["khadi2.jpeg"]
           }
         ]
       },
@@ -140,14 +140,14 @@
             "name": "Bengali1",
             "price": 90,
             "images": [
-              "anarkali.jpg"
+              "bengali1.jpg"
             ]
           },
           {
             "name": "Bengali2",
             "price": 95,
             "images": [
-              "anarkali.jpg"
+              "bengali2.jpg"
             ]
           }
         ]
@@ -158,12 +158,12 @@
           {
             "name": "Ikkat1",
             "price": 110,
-            "images": ["anarkali.jpg"]
+            "images": ["ikkat1.jpg"]
           },
           {
             "name": "Ikkat2",
             "price": 115,
-            "images": ["anarkali.jpg"]
+            "images": ["ikkat2.jpg"]
           }
         ]
       },
@@ -174,14 +174,14 @@
             "name": "Chanderi1",
             "price": 130,
             "images": [
-              "anarkali.jpg"
+              "chanderi1.webp"
             ]
           },
           {
             "name": "Chanderi2",
             "price": 135,
             "images": [
-              "anarkali.jpg"
+              "chanderi2.webp"
             ]
           }
         ]
@@ -193,14 +193,14 @@
             "name": "Kalamkari1",
             "price": 100,
             "images": [
-             "anarkali.jpg"
+             "kalamkari1.webp"
             ]
           },
           {
             "name": "Kalamkari2",
             "price": 105,
             "images": [
-              "anarkali.jpg"
+              "kalamkari2.webp"
             ]
           }
         ]
@@ -212,14 +212,14 @@
             "name": "Madhubani1",
             "price": 140,
             "images": [
-              "anarkali.jpg"
+              "madubani1.jpg"
             ]
           },
           {
             "name": "Madhubani2",
             "price": 145,
             "images": [
-              "anarkali.jpg"
+              "madubani2.webp"
             ]
           }
         ]
