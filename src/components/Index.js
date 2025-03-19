@@ -5,6 +5,9 @@ import CarouselMain from "./CarouselMain";
 import ProductShowcase from "./ProductShowcase";
 import Carousel from 'react-bootstrap/Carousel';
 import Brands from './Brands';
+import Grid from "./Grid";
+
+
 const Index = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
@@ -21,7 +24,7 @@ const Index = () => {
       
       <SareeCoverPromo />
       <Features />
-
+      <Grid/>
     </div>
   );
 };

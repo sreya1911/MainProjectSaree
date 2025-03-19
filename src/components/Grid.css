@@ -1,0 +1,66 @@
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* More columns to make the grid smaller */
+    gap: 8px; /* Smaller gap between items */
+    padding: 8px; /* Smaller padding */
+    height: 80vw;
+  }
+  
+  
+  .image-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for the pop effect */
+  }
+  
+  .image-card.large {
+    grid-column: span 3; /* Adjusted to fit the smaller grid */
+    grid-row: span 3; /* Adjusted to fit the smaller grid */
+  }
+  
+  .image-card.medium {
+    grid-column: span 2; /* Adjusted to fit the smaller grid */
+    grid-row: span 2; /* Adjusted to fit the smaller grid */
+  }
+  
+  .image-card.medium1 {
+    grid-column: span 3; /* Adjusted to fit the smaller grid */
+    grid-row: span 2; /* Adjusted to fit the smaller grid */
+  }
+  
+  .image-card.small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for the pop effect */
+  }
+  
+  .image-card:hover .image {
+    transform: scale(1.05); /* Slightly scale the image on hover */
+  }
+  
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-card:hover .title {
+    opacity: 1;
+  }
+  
