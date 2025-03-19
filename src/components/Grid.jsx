@@ -21,7 +21,7 @@ const Grid = () => {
     { imageUrl: chanderi, title: 'Chanderi Cotton', className: 'small' },
     { imageUrl: madhubani, title: 'Madhubani', className: 'small' },
     { imageUrl: partywear, title: 'Lehenga', className: 'large' },
-    { imageUrl: "https://media.istockphoto.com/id/105680592/photo/indian-scarves-in-many-colors-for-display.jpg?s=612x612&w=0&k=20&c=eGIl-xZv6K7miZSCQjvezFqSoas3H6uVZ4OR7cAhDxs=", title: 'Srinika', className: 'medium1' },
+    { imageUrl: "https://media.istockphoto.com/id/105680592/photo/indian-scarves-in-many-colors-for-display.jpg?s=612x612&w=0&k=20&c=eGIl-xZv6K7miZSCQjvezFqSoas3H6uVZ4OR7cAhDxs=", title: 'Regional Sarees Materials', className: 'medium1' },
   ];
 
   return (
