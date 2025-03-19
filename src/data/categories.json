@@ -130,6 +130,16 @@
             "name": "Khadi2",
             "price": 85,
             "images": ["khadi2.jpeg"]
+          },
+          {
+            "name": "Khadi3",
+            "price": 85,
+            "images": ["khadi3.webp"]
+          },
+          {
+            "name": "Khadi4",
+            "price": 85,
+            "images": ["khadi4.webp"]
           }
         ]
       },
@@ -220,6 +230,20 @@
             "price": 145,
             "images": [
               "madubani2.webp"
+            ]
+          },
+          {
+            "name": "Madhubani3",
+            "price": 145,
+            "images": [
+              "madubani3.jpg"
+            ]
+          },
+          {
+            "name": "Madhubani4",
+            "price": 145,
+            "images": [
+              "madubani4.webp"
             ]
           }
         ]
