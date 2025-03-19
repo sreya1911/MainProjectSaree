@@ -10,14 +10,17 @@ const Index = () => {
     <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
       
       <CarouselMain />
-      <Features />
-
+      
       <Brands/>
+
+      
      
       
 
       <ProductShowcase />
+      
       <SareeCoverPromo />
+      <Features />
 
     </div>
   );
