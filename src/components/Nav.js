@@ -3,11 +3,13 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Nav.css";
 import { useAuth } from "./AuthContext";
+import { useWishlist } from "./WishlistContext";
 
 
 const Navone = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const { wishlist } = useWishlist();
 
   const handleLogout = () => {
     logout();
@@ -23,8 +25,9 @@ const Navone = () => {
         <Link to="/cart">
           <i className="bi bi-cart"></i>
         </Link>
-        <Link to="/wishlist">
+        <Link to="/wishlist" style={{ position: 'relative' }}>
           <i className="bi bi-heart"></i>
+          {wishlist.length > 0 && <span className="red-dot"></span>}
         </Link>
         {user ? (
           <>
@@ -50,7 +53,7 @@ const Navtwo = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/categories')
+    fetch('http://localhost:3000/categories')
       .then(response => response.json())
       .then(data => {
         setCategories(data);

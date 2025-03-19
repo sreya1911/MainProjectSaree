@@ -4,6 +4,16 @@ i {
   color: black;
 }
 
+.red-dot {
+  position: absolute;
+  top: 2px;
+  right: -5px;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
 
 
 .bi-heart:hover {

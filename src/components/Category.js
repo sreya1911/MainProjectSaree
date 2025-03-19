@@ -9,8 +9,8 @@ const CategoryPage = () => {
   const [category, setCategory] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch('http://localhost:5000/categories')
+  useEffect(() => { 
+    fetch('http://localhost:3000/categories')
       .then(response => response.json())
       .then(data => {
         const categoryData = data.find(cat => cat.name.toLowerCase() === categoryName.toLowerCase());
