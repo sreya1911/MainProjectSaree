@@ -30,3 +30,26 @@
   height: 100%;
   text-align: center;
 }
+.slide-4 .carousel-caption {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  color: #FFD700;
+  padding: 20px;
+  text-Align: right;
+  font-Family: Arial, sans-serif;
+  font-Weight: bold;
+  text-Shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                
+}
+.slide-5 .carousel-caption {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  color: #efdfbb;
+  padding: 20px;
+  text-Align: right;
+  font-Family: Arial, sans-serif;
+  font-Weight: bold;
+  text-Shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
