@@ -36,7 +36,7 @@ const ProductCard = ({ product }) => {
       {console.log(product.name)}
         <Card.Title>{product.name}</Card.Title>
 
-        <Card.Text className="text-danger">${product.price}</Card.Text>
+        <Card.Text className="text-danger">₹{product.price}</Card.Text>
         <Button onClick={() => addToCart(product)} className="add-to-cart-btn">
           Add to Cart
         </Button>

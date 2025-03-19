@@ -65,7 +65,7 @@ const WishlistPage = () => {
                 <Card.Body>
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{product.description}</Card.Text>
-                  <Card.Text className="text-danger">${product.price}</Card.Text>
+                  <Card.Text className="text-danger">₹{product.price}</Card.Text>
                   <Button onClick={() => handle(product)}>Add to Cart</Button>
                   {/* <Button variant="danger" onClick={() => removeFromWishlist(product)}>Remove</Button> */}
                 </Card.Body>
