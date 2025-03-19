@@ -15,6 +15,7 @@ import WishlistPage from "./components/WishlistPage";
 import { WishlistProvider } from "./components/WishlistContext";
 import  Footer from './components/Footer';
 import Buy from "./components/Buy";
+import Brands from "./components/Brands";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <CartProvider>
         <WishlistProvider>
           <ImpNav />
+        
           <CartModal />
           <Routes>
             <Route path="/" element={<Index />} />

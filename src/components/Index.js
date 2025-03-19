@@ -2,6 +2,7 @@ import React from 'react';
 import Features from './Features';
 import SareeCoverPromo from './SareeCoverPromo';
 import Carousel from 'react-bootstrap/Carousel';
+import Brands from './Brands';
 const Index = () => {
   return (
     <div>
@@ -56,7 +57,9 @@ const Index = () => {
         </Carousel.Item>
       </Carousel>
       <Features />
+      <Brands/>
       <SareeCoverPromo/>
+      
     </div>
   );
 };

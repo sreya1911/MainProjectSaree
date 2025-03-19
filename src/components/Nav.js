@@ -18,7 +18,7 @@ const Navone = () => {
   return (
     <nav className="navbar bg-body-tertiary">
       <Link to="/" className="navbar-brand">
-        Brandname
+        PAKSH
       </Link>
       <div className="nav-icons">
         <Link to="/cart">
