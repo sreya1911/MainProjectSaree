@@ -15,6 +15,7 @@ import WishlistPage from "./components/WishlistPage";
 import { WishlistProvider } from "./components/WishlistContext";
 import  Footer from './components/Footer';
 import Buy from "./components/Buy";
+import Brands from "./components/Brands";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <WishlistProvider>
           <div id="root">
           <ImpNav />
+        
           <CartModal />
           <div className="main-content"> 
           <Routes>
