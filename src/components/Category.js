@@ -26,7 +26,7 @@ const CategoryPage = () => {
     <div className='container'>
       <div className='cat'>
         <h1>{category.name}</h1>
-        <p>{category.description}</p>
+        {/* <p>{category.description}</p> */}
       </div>
       <Carddisplay category={category} subcategory={subcategory} />
     </div>
