@@ -9,7 +9,9 @@ const CategoryPage = () => {
   const [category, setCategory] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+
+  useEffect(() => { 
+
     fetch('http://localhost:3000/categories')
       .then(response => response.json())
       .then(data => {
