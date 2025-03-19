@@ -94,6 +94,20 @@
             "images": [
               "mysoresilk2.webp"
             ]
+          },
+          {
+            "name": "Banarsi1",
+            "price": 130,
+            "images": [
+              "banarsi1.webp"
+            ]
+          },
+          {
+            "name": "Banarsi2",
+            "price": 210,
+            "images": [
+              "banarsi2.webp"
+            ]
           }
         ]
       }
