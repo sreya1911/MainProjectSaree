@@ -391,14 +391,28 @@
             "name": "Weddinglehenga1",
             "price": 300,
             "images": [
-              "anarkali.jpg"
+              "wedding1.webp"
             ]
           },
           {
             "name": "Weddinglehenga2",
             "price": 310,
             "images": [
-              "anarkali.jpg"
+              "wedding2.jpg"
+            ]
+          },
+          {
+            "name": "Weddinglehenga3",
+            "price": 310,
+            "images": [
+              "wedding3.webp"
+            ]
+          },
+          {
+            "name": "Weddinglehenga4",
+            "price": 310,
+            "images": [
+              "wedding4.webp"
             ]
           }
         ]
@@ -410,14 +424,28 @@
             "name": "Reception1",
             "price": 250,
             "images": [
-              "anarkali.jpg"
+              "reception1.jpg"
             ]
           },
           {
             "name": "Reception2",
             "price": 260,
             "images": [
-              "anarkali.jpg"
+              "reception2.jpg"
+            ]
+          },
+          {
+            "name": "Reception3",
+            "price": 250,
+            "images": [
+              "reception3.webp"
+            ]
+          },
+          {
+            "name": "Reception4",
+            "price": 260,
+            "images": [
+              "reception3.png"
             ]
           }
         ]
@@ -429,14 +457,28 @@
             "name": "Partyware1",
             "price": 200,
             "images": [
-              "anarkali.jpg"
+              "party1.jpg"
             ]
           },
           {
             "name": "Partyware2",
             "price": 210,
             "images": [
-              "anarkali.jpg"
+              "party2.webp"
+            ]
+          },
+          {
+            "name": "Partyware3",
+            "price": 200,
+            "images": [
+              "party3.webp"
+            ]
+          },
+          {
+            "name": "Partyware4",
+            "price": 200,
+            "images": [
+              "party4.webp"
             ]
           }
         ]
