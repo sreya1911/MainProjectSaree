@@ -34,6 +34,7 @@ const ProductCard = ({ product, onItemClick }) => {
           alt={product.name}
           className="product-image"
         />
+         </a>
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
           <Card.Text className="text-danger">${product.price}</Card.Text>
@@ -53,7 +54,7 @@ const ProductCard = ({ product, onItemClick }) => {
             }}
           ></i>
         </Card.Body>
-      </a>
+     
     </Card>
   );
 };
@@ -142,7 +143,7 @@ const Carddisplay = ({ category, subcategory }) => {
               
               <h2>{selectedItem.name}</h2>
               <p>{selectedItem.description}</p>
-              <p>MRP ₹{selectedItem.price}</p>
+              <p>₹{selectedItem.price}</p>
               <div
                 style={{
                   display: "flex",
