@@ -15,10 +15,10 @@ const WishlistPage = () => {
   }
   return (
     <div>
-      <h1>My Wishlist</h1>
+      <h1 style={{textAlign: 'center', marginTop: '10px'}}>My Wishlist</h1>
       <Row>
         {wishlist.length === 0 ? (
-          <p>Your wishlist is empty.</p>
+          <p style={{textAlign: 'center'}}>Your wishlist is empty.</p>
         ) : (
           wishlist.map(product => (
             <Col xs={12} sm={6} md={4} lg={3} key={product.name} className="mb-4">
