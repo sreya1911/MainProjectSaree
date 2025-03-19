@@ -10,13 +10,13 @@
           {
             "name": "SoftSilk1",
             "price": 100,
-            "images": ["anarkali.jpg"]
+            "images": ["softsilk1.jpg"]
           },
           {
             "name": "SoftSilk2",
             "price": 110,
             "images": [
-              "anarkali.jpg"
+              "softsilk2.jpg"
             ]
           }
         ]
@@ -28,14 +28,14 @@
             "name": "Kanjivaram1",
             "price": 200,
             "images": [
-              "anarkali.jpg"
+              "kanjivaram1.jpg"
             ]
           },
           {
             "name": "Kanjivaram2",
             "price": 210,
             "images": [
-              "anarkali.jpg"
+              "kanjivaram2.jpg"
             ]
           }
         ]
@@ -47,14 +47,14 @@
             "name": "RawSilk1",
             "price": 150,
             "images": [
-             "anarkali.jpg"
+             "rawsilk1.jpg"
             ]
           },
           {
             "name": "RawSilk2",
             "price": 160,
             "images": [
-              "anarkali.jpg"
+              "rawsilk2.jpg"
             ]
           }
         ]
@@ -66,14 +66,14 @@
             "name": "KalamkariPrint1",
             "price": 120,
             "images": [
-              "anarkali.jpg"
+              "kalamkari1.jpg"
             ]
           },
           {
             "name": "KalamkariPrint2",
             "price": 130,
             "images": [
-              "anarkali.jpg"
+              "kalamkari2.jpg"
             ]
           }
         ]
@@ -85,14 +85,28 @@
             "name": "Mysoresilk1",
             "price": 180,
             "images": [
-              "anarkali.jpg"
+              "mysoresilk1.jpg"
             ]
           },
           {
             "name": "Mysoresilk2",
             "price": 190,
             "images": [
-              "anarkali.jpg"
+              "mysoresilk2.webp"
+            ]
+          },
+          {
+            "name": "Banarsi1",
+            "price": 130,
+            "images": [
+              "banarsi1.webp"
+            ]
+          },
+          {
+            "name": "Banarsi2",
+            "price": 210,
+            "images": [
+              "banarsi2.webp"
             ]
           }
         ]
@@ -110,12 +124,12 @@
           {
             "name": "Khadi1",
             "price": 80,
-            "images": ["anarkali.jpg"]
+            "images": ["khadi1.png"]
           },
           {
             "name": "Khadi2",
             "price": 85,
-            "images": ["anarkali.jpg"]
+            "images": ["khadi2.jpeg"]
           }
         ]
       },
@@ -126,14 +140,14 @@
             "name": "Bengali1",
             "price": 90,
             "images": [
-              "anarkali.jpg"
+              "bengali1.jpg"
             ]
           },
           {
             "name": "Bengali2",
             "price": 95,
             "images": [
-              "anarkali.jpg"
+              "bengali2.jpg"
             ]
           }
         ]
@@ -144,12 +158,12 @@
           {
             "name": "Ikkat1",
             "price": 110,
-            "images": ["anarkali.jpg"]
+            "images": ["ikkat1.jpg"]
           },
           {
             "name": "Ikkat2",
             "price": 115,
-            "images": ["anarkali.jpg"]
+            "images": ["ikkat2.jpg"]
           }
         ]
       },
@@ -160,14 +174,14 @@
             "name": "Chanderi1",
             "price": 130,
             "images": [
-              "anarkali.jpg"
+              "chanderi1.webp"
             ]
           },
           {
             "name": "Chanderi2",
             "price": 135,
             "images": [
-              "anarkali.jpg"
+              "chanderi2.webp"
             ]
           }
         ]
@@ -179,14 +193,14 @@
             "name": "Kalamkari1",
             "price": 100,
             "images": [
-             "anarkali.jpg"
+             "kalamkari1.webp"
             ]
           },
           {
             "name": "Kalamkari2",
             "price": 105,
             "images": [
-              "anarkali.jpg"
+              "kalamkari2.webp"
             ]
           }
         ]
@@ -198,14 +212,14 @@
             "name": "Madhubani1",
             "price": 140,
             "images": [
-              "anarkali.jpg"
+              "madubani1.jpg"
             ]
           },
           {
             "name": "Madhubani2",
             "price": 145,
             "images": [
-              "anarkali.jpg"
+              "madubani2.webp"
             ]
           }
         ]
@@ -391,14 +405,28 @@
             "name": "Weddinglehenga1",
             "price": 300,
             "images": [
-              "anarkali.jpg"
+              "wedding1.webp"
             ]
           },
           {
             "name": "Weddinglehenga2",
             "price": 310,
             "images": [
-              "anarkali.jpg"
+              "wedding2.jpg"
+            ]
+          },
+          {
+            "name": "Weddinglehenga3",
+            "price": 310,
+            "images": [
+              "wedding3.webp"
+            ]
+          },
+          {
+            "name": "Weddinglehenga4",
+            "price": 310,
+            "images": [
+              "wedding4.webp"
             ]
           }
         ]
@@ -410,14 +438,28 @@
             "name": "Reception1",
             "price": 250,
             "images": [
-              "anarkali.jpg"
+              "reception1.jpg"
             ]
           },
           {
             "name": "Reception2",
             "price": 260,
             "images": [
-              "anarkali.jpg"
+              "reception2.jpg"
+            ]
+          },
+          {
+            "name": "Reception3",
+            "price": 250,
+            "images": [
+              "reception3.webp"
+            ]
+          },
+          {
+            "name": "Reception4",
+            "price": 260,
+            "images": [
+              "reception3.png"
             ]
           }
         ]
@@ -429,14 +471,28 @@
             "name": "Partyware1",
             "price": 200,
             "images": [
-              "anarkali.jpg"
+              "party1.jpg"
             ]
           },
           {
             "name": "Partyware2",
             "price": 210,
             "images": [
-              "anarkali.jpg"
+              "party2.webp"
+            ]
+          },
+          {
+            "name": "Partyware3",
+            "price": 200,
+            "images": [
+              "party3.webp"
+            ]
+          },
+          {
+            "name": "Partyware4",
+            "price": 200,
+            "images": [
+              "party4.webp"
             ]
           }
         ]
