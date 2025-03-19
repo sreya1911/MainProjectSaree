@@ -1,7 +1,7 @@
 [
   {
     "name": "Silk",
-    "description": "Description for Silks",
+    "description": "The Touch of Timeless Sophistication",
     "images": ["anarkali.jpg"],
     "subcategories": [
       {
@@ -115,7 +115,7 @@
   },
   {
     "name": "Cotton",
-    "description": "Description for Cotton",
+    "description": "Breathe Easy, Live Softly with Cotton",
     "images": ["anarkali.jpg"],
     "subcategories": [
       {
@@ -331,7 +331,7 @@
   },
   {
     "name": "Salwar",
-    "description": "Description for Salwar",
+    "description": "Discover Freedom in Every Fold of Salwar",
     "images": ["anarkali.jpg"],
     "subcategories": [
       {
@@ -341,14 +341,14 @@
             "name": "SangeetSalwar1",
             "price": 130,
             "images": [
-              "anarkali.jpg"
+              "salwar1.jpg"
             ]
           },
           {
             "name": "SangeetSalwar2",
             "price": 135,
             "images": [
-              "anarkali.jpg"
+              "salwar2.jpg"
             ]
           }
         ]
@@ -360,14 +360,14 @@
             "name": "FestiveSalwar1",
             "price": 140,
             "images": [
-             "anarkali.jpg"
+             "salwar3.webp"
             ]
           },
           {
             "name": "FestiveSalwar2",
             "price": 145,
             "images": [
-              "anarkali.jpg"
+              "salwar5.jpg"
             ]
           }
         ]
@@ -379,14 +379,14 @@
             "name": "Mehindisalwar1",
             "price": 120,
             "images": [
-              "anarkali.jpg"
+              "salwar6.jpg"
             ]
           },
           {
             "name": "Mehindisalwar2",
             "price": 125,
             "images": [
-             "anarkali.jpg"
+             "salwar7.jpg"
             ]
           }
         ]
@@ -395,7 +395,7 @@
   },
   {
     "name": "Lehenga",
-    "description": "Description for Lehenga",
+    "description": "Twirl in Timeless Beauty",
     "images": ["anarkali.jpg"],
     "subcategories": [
       {
