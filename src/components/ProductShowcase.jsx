@@ -11,23 +11,27 @@ const products = [
     src: img1,
     title: "Georgette",
     subtitle: "Multicolor Saree",
+    link:"category/silk"
   },
   {
     src: img3,
     title: "Tissue",
     subtitle: " Kanchivaram Tissue ",
+    link:"category/cotton"
   },
   {
     src: img2,
     title: "Designer",
     subtitle: "Woven Silk",
+    link:"category/regional"
   },
   {
     src: img4,
     title: "Lehanga",
     subtitle: "Fashion",
+    link:"category/lehenga"
   },
-  { src: img5, title: "Banarasi", subtitle: "Banarasi Silk" },
+  { src: img5, title: "Banarasi", subtitle: "Banarasi Silk", link:"category/salwar"},
 ];
 
 const ProductShowcase = () => {
@@ -36,16 +40,18 @@ const ProductShowcase = () => {
       <h1>One Place To Elevate Your Lifestyle</h1>
       <div className="product-container">
         {products.map((product, index) => (
-          <div key={index} className="product-item">
+          <div key={index}  className="product-item">
+             <a href={product.link}>
             <img
               src={product.src}
               alt={product.title}
               style={{ height: "300px" }}
             />
-            <div className="overlay">
+            <div className="overlay" >
               <h2>{product.title}</h2>
               <p className="subtitle">{product.subtitle}</p>
             </div>
+            </a>
           </div>
         ))}
       </div>
