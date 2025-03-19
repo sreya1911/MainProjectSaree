@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
 
 .foot{
     margin-top: 10px;
@@ -7,7 +16,7 @@
     padding: 20px 0;
     color: #333;
     position: static;
-    
+    bottom:0
 }
 
 .footer-container {
