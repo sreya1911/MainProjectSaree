@@ -1,11 +1,21 @@
 .App {
   text-align: center;
+  /* position: relative; */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+/* .nav-fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  bottom: 90vh;
+} */
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -24,8 +24,9 @@ function App() {
       <CartProvider>
         <WishlistProvider>
           <div id="root">
+            <div className="nav-fix">
           <ImpNav />
-        
+          </div> 
           <CartModal />
           <div className="main-content"> 
           <Routes>

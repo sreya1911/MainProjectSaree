@@ -5,6 +5,7 @@ import { useWishlist } from './WishlistContext';
 import { Card, Row, Col, Button } from 'react-bootstrap';
 import { useCart } from './CartContext';
 import {FaTimes} from 'react-icons/fa'
+import "./Wishlistandcart.css"
 
 const WishlistPage = () => {
   const { wishlist, removeFromWishlist } = useWishlist();
@@ -14,7 +15,7 @@ const WishlistPage = () => {
     removeFromWishlist(product)
   }
   return (
-    <div>
+    <div className='container'>
       <h1 style={{textAlign: 'center', marginTop: '10px'}}>My Wishlist</h1>
       <Row>
         {wishlist.length === 0 ? (

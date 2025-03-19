@@ -3,14 +3,16 @@
 .wishlist-cart-page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+    min-height: 100vh; 
+    width: 100%;
+    /* Ensure the container takes the full height of the viewport */
   }
   
   .wishlist-section {
-    flex: 1; /* Take up remaining space */
+    flex: 1; 
   }
   
   .cart-section {
-    flex: 0; /* Take up only the space needed by the cart */
+    flex: 0; 
   }
   

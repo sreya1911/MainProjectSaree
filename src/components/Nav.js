@@ -93,7 +93,7 @@ const Navtwo = () => {
 
 const ImpNav = () => {
   return (
-    <div>
+    <div className="nav-fix">
       <Navone />
       <Navtwo />
     </div>
