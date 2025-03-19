@@ -31,64 +31,72 @@ const Cart = () => {
 
   return (
     <div className="cart-container">
-      <h1>Shopping Cart</h1>
+
+      <h1 style={{top:0}}>Shopping Cart</h1>
+
       {notification && <Alert variant="success">{notification}</Alert>}
       <Row>
         {cart.length > 0 ? (
           cart.map((product, index) => (
             <Col xs={12} key={index} className="mb-4">
               <Card className="d-flex flex-row position-relative cart-item">
-                <Card.Img
-                  variant="top"
-                  src={require(`../assets/${product.images[0]}`)}
-                  alt={product.name}
-                  className="cart-item-image"
+                <FaTrash
+                  className="cart-trash-icon-top"
+                  onClick={() => removeFromCart(product)}
                 />
-                <Card.Body>
-                  <Card.Title>{product.name}</Card.Title>
-                  <Card.Text className="text-success">In stock</Card.Text>
-                  <Card.Text>Eligible for FREE Shipping</Card.Text>
-                  <Form.Check type="checkbox" label="This will be a gift" />
-                  <Card.Text className="text-danger">
-                    Total: ${(product.price * product.quantity).toFixed(2)}
-                  </Card.Text>
-                  <div className="quantity-control">
+                <Col xs={2} className="cart-item-image-container">
+                  <Card.Img
+                    variant="top"
+                    src={require(`../assets/${product.images[0]}`)}
+                    alt={product.name}
+                    className="cart-item-image"
+                  />
+                </Col>
+                <Col xs={10} className="d-flex flex-column justify-content-between">
+                  <Card.Body className="d-flex flex-column justify-content-start">
+                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Text className="text-success">In stock</Card.Text>
+                    <Card.Text>Eligible for FREE Shipping</Card.Text>
+                    <Form.Check type="checkbox" label="This will be a gift" />
+                    <Card.Text className="text-danger mt-2">
+                      Total: ${(product.price * product.quantity).toFixed(2)}
+                    </Card.Text>
+                  </Card.Body>
+                  <div className="d-flex flex-column align-items-start">
+                    <div className="quantity-control">
+                      <Button
+                        variant="light"
+                        onClick={() => decreaseQuantity(product)}
+                        className="cart-button"
+                      >
+                        {" "}
+                        -{" "}
+                      </Button>
+                      <span className="quantity">{product.quantity}</span>
+                      <Button
+                        variant="light"
+                        onClick={() => increaseQuantity(product)}
+                        className="cart-button"
+                      >
+                        {" "}
+                        +{" "}
+                      </Button>
+                    </div>
                     <Button
-                      variant="light"
-                      onClick={() => decreaseQuantity(product)}
-                      className="cart-button"
+                      variant="warning"
+                      onClick={() => handleBuy(product)}
+                      className="buy-button mt-2"
                     >
-                      {" "}
-                      -{" "}
+                      Buy Now
                     </Button>
-                    <span className="quantity">{product.quantity}</span>
-                    <Button
-                      variant="light"
-                      onClick={() => increaseQuantity(product)}
-                      className="cart-button"
-                    >
-                      {" "}
-                      +{" "}
-                    </Button>
-                    <FaTrash
-                      className="cart-trash-icon"
-                      onClick={() => removeFromCart(product)}
-                    />
                   </div>
-                  <Button
-                    variant="warning"
-                    onClick={() => handleBuy(product)}
-                    className="buy-button"
-                  >
-                    Buy Now
-                  </Button>
-                </Card.Body>
+                </Col>
               </Card>
             </Col>
           ))
         ) : (
           <Col xs={12}>
-            <p>Your cart is empty.</p>
+            <p style={{display:'flex',justifyContent:'center',alignItems:'flex-start'}}>Your cart is empty.</p>
           </Col>
         )}
       </Row>
