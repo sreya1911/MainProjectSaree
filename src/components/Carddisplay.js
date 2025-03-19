@@ -34,6 +34,7 @@ const ProductCard = ({ product }) => {
         style={{ width: "100%", height: "350px", objectFit: "cover" }}
       />
       <Card.Body>
+      {console.log(product.name)}
         <Card.Title>{product.name}</Card.Title>
         <Card.Text>{product.description}</Card.Text>
         <Card.Text className="text-danger">${product.price}</Card.Text>
