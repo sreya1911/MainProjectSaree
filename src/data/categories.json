@@ -214,7 +214,7 @@
   },
   {
     "name": "Regional",
-    "description": "Description for Regional",
+    "description": "Dive into a vibrant collection of catchy",
     "images": ["anarkali.jpg"],
     "subcategories": [
       {
@@ -224,14 +224,14 @@
             "name": "Sambalpuri1",
             "price": 160,
             "images": [
-              "anarkali.jpg"
+              "regional1.jpeg"
             ]
           },
           {
             "name": "Sambalpuri2",
             "price": 165,
             "images": [
-              "anarkali.jpg"
+              "regional2.webp"
             ]
           }
         ]
@@ -244,14 +244,14 @@
             "price": 220,
 
             "images": [
-              "anarkali.jpg"
+              "regional3.jpeg"
             ]
           },
           {
             "name": "Kanjivaram2",
             "price": 225,
             "images": [
-              "anarkali.jpg"
+              "regional4.webp"
             ]
           }
         ]
@@ -263,14 +263,14 @@
             "name": "Bengali1",
             "price": 190,
             "images": [
-              "anarkali.jpg"
+              "regional5.jpeg"
             ]
           },
           {
             "name": "Bengali2",
             "price": 195,
             "images": [
-              "anarkali.jpg"
+              "regional6.jpeg"
             ]
           }
         ]
@@ -282,14 +282,14 @@
             "name": "Mysore1",
             "price": 210,
             "images": [
-              "anarkali.jpg"
+              "regional7.webp"
             ]
           },
           {
             "name": "Mysore2",
             "price": 215,
             "images": [
-              "anarkali.jpg"
+              "regional8.webp"
             ]
           }
         ]
@@ -301,14 +301,14 @@
             "name": "KarnatakaSarees1",
             "price": 170,
             "images": [
-              "anarkali.jpg"
+              "regional9.webp"
             ]
           },
           {
             "name": "KarnatakaSarees2",
             "price": 175,
             "images": [
-             "anarkali.jpg"
+             "regional10.webp"
             ]
           }
         ]
