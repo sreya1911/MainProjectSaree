@@ -9,11 +9,11 @@ import sharara from '../assets/mirraw.jpg';
 import ghagra from '../assets/ritu.jpg';
 
 const brands = [
-  { name: 'Manish Malhotra', imgSrc: lehenga },
-  { name: 'Fab India', imgSrc: anarkali },
-  { name: 'Nalli Silks', imgSrc: ethnic },
-  { name: 'Mirraw', imgSrc: sharara },
-  { name: 'Ritu Kumar', imgSrc: ghagra }
+  { name: 'Manish Malhotra', imgSrc: lehenga, link:"/category/silk" },
+  { name: 'Fab India', imgSrc: anarkali, link:"/category/cotton" },
+  { name: 'Nalli Silks', imgSrc: ethnic, link:"/category/regional" },
+  { name: 'Mirraw', imgSrc: sharara ,link:"/category/salwar"},
+  { name: 'Ritu Kumar', imgSrc: ghagra,link:"/category/lehenga" }
 ];
 
 const Brands = () => {
@@ -35,6 +35,7 @@ const Brands = () => {
           <div className="row justify-content-between">
             {brands.map((brand, index) => (
               <div key={index} className="col text-center">
+               <a href={brand.link} style={{textDecoration:'none'}}>
                 <img
                   src={brand.imgSrc}
                   alt={brand.name}
@@ -42,6 +43,7 @@ const Brands = () => {
                   style={{ width: '130px', height: '130px' }}
                 />
                 <p style={{ color: 'black' }}>{brand.name}</p>
+                </a>
               </div>
             ))}
           </div>

@@ -25,6 +25,7 @@ const CategoryPage = () => {
   return (
     <div className='container'>
       <div className='cat'>
+        
         <h1>{category.name}</h1>
         {/* <p>{category.description}</p> */}
       </div>
