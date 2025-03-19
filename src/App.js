@@ -4,7 +4,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ImpNav from "./components/Nav";
 import Index from "./components/Index";
-import Category from "./components/Category";
+import CategoryPage from "./components/Category";
 import Cart from "./components/Cart";
 import { AuthProvider } from "./components/AuthContext";
 import { CartProvider } from "./components/CartContext";
@@ -15,7 +15,6 @@ import WishlistPage from "./components/WishlistPage";
 import { WishlistProvider } from "./components/WishlistContext";
 import  Footer from './components/Footer';
 import Buy from "./components/Buy";
-import Brands from "./components/Brands";
 
 
 function App() {
@@ -24,14 +23,15 @@ function App() {
       <CartProvider>
         <WishlistProvider>
           <div id="root">
+            <div className="nav-fix">
           <ImpNav />
-        
+          </div> 
           <CartModal />
           <div className="main-content"> 
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/category/:categoryName" element={<Category />} />
-            <Route path="/category/:categoryName/subcategory/:subcategoryName" element={<Category />} />
+            <Route path="/category/:categoryName" element={<CategoryPage />} />
+            <Route path="/category/:categoryName/subcategory/:subcategoryName" element={<CategoryPage />} />
             <Route path="/cart" element={<Cart />} />
             <Route path='/buy' element={<Buy />}/>
             <Route path="/login" element={<Login />} />

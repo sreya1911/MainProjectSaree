@@ -59,7 +59,7 @@ const Cart = () => {
                     <Card.Text>Eligible for FREE Shipping</Card.Text>
                     <Form.Check type="checkbox" label="This will be a gift" />
                     <Card.Text className="text-danger mt-2">
-                      Total: ${(product.price * product.quantity).toFixed(2)}
+                      Total: ₹{(product.price * product.quantity).toFixed(2)}
                     </Card.Text>
                   </Card.Body>
                   <div className="d-flex flex-column align-items-start ml-3">

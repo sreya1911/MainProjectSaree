@@ -26,6 +26,7 @@ const ProductCard = ({ product, onItemClick }) => {
 
   return (
     <Card className="hover-card">
+
       <a onClick={() => onItemClick(product)}>
         <Card.Img
           variant="top"
@@ -104,25 +105,31 @@ const Carddisplay = ({ category, subcategory }) => {
           left: 0,
           width: "100%",
           height: "max-content",
-          backgroundColor: "white",
+          backgroundColor: "rgba(255, 255, 255, 0.8)",
           zIndex: 1050,
           overflowY: "auto",
         }}
       >
+        
+        <div className="container my-5 p-4 rounded"
+        style={{backgroundColor:"rgba(255, 220, 139, 0.36)"}} >
         <button
           className="btn btn-secondary mb-4"
           onClick={handleClose}
           style={{
-            position: "absolute",
+            position: "relative",
+            alignItems:"end",
             top: "10px",
-            right: "10px",
-            zIndex: 1100,
+            right: 0,
+            zIndex: 1,
+           
           }}
         >
           Close
         </button>
-        <div className="container my-5 bg-light p-4 rounded shadow-sm">
-          <div className="row">
+          
+          <div className="row" style={{backgroundColor:"transparent"}}>
+            
             <div className="col-md-6">
               <img
               style={{height:"70%",width:"400px"}}
@@ -132,6 +139,7 @@ const Carddisplay = ({ category, subcategory }) => {
               />
             </div>
             <div className="col-md-6">
+              
               <h2>{selectedItem.name}</h2>
               <p>{selectedItem.description}</p>
               <p>MRP ₹{selectedItem.price}</p>
@@ -143,6 +151,7 @@ const Carddisplay = ({ category, subcategory }) => {
                   marginTop: "20px",
                 }}
               >
+                
                 <button
                   className="btn btn-primary"
                   onClick={() => addToCart(selectedItem)}
@@ -155,7 +164,7 @@ const Carddisplay = ({ category, subcategory }) => {
                   style={{
                     cursor: "pointer",
                     color: isWishlisted ? "red" : "black",
-                    fontSize: "24px", // Adjust size if needed
+                    fontSize: "24px", 
                   }}
                 ></i>
               </div>

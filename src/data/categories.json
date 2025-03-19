@@ -1,4 +1,5 @@
-[
+{
+"categories" : [
   {
     "name": "Silk",
     "description": "The Touch of Timeless Sophistication",
@@ -524,3 +525,4 @@
     ]
   }
 ]
+}
