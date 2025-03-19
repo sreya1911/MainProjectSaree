@@ -6,13 +6,13 @@ import "./All.css";
 import { useCart } from "./CartContext";
 import { useWishlist } from "./WishlistContext";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onItemClick }) => {
   const { addToCart } = useCart();
   const { wishlist, addToWishlist, removeFromWishlist } = useWishlist();
   const [isWishlisted, setIsWishlisted] = useState(false);
 
   useEffect(() => {
-    setIsWishlisted(wishlist.some(item => item.name === product.name));
+    setIsWishlisted(wishlist.some((item) => item.name === product.name));
   }, [wishlist, product.name]);
 
   const handleWishlistClick = () => {
@@ -26,35 +26,58 @@ const ProductCard = ({ product }) => {
 
   return (
     <Card className="hover-card">
-      <Card.Img
-        variant="top"
-        src={require(`../assets/${product.images[0]}`)}
-        alt={product.name}
-        className="product-image"
-      />
-      <Card.Body>
-      {console.log(product.name)}
-        <Card.Title>{product.name}</Card.Title>
-        {/* <Card.Text>{product.description}</Card.Text> */}
-        <Card.Text className="text-danger">${product.price}</Card.Text>
-        <Button onClick={() => addToCart(product)} className="add-to-cart-btn">
-          Add to Cart
-        </Button>
-        <i
-          className={`bi bi-heart${isWishlisted ? '-fill' : ''}`}
-          onClick={handleWishlistClick}
-          style={{
-            cursor: 'pointer',
-            marginLeft: '10px',
-            color: isWishlisted ? 'red' : 'black'
-          }}
-        ></i>
-      </Card.Body>
+      <a onClick={() => onItemClick(product)}>
+        <Card.Img
+          variant="top"
+          src={require(`../assets/${product.images[0]}`)}
+          alt={product.name}
+          className="product-image"
+        />
+        <Card.Body>
+          <Card.Title>{product.name}</Card.Title>
+          <Card.Text className="text-danger">${product.price}</Card.Text>
+          <Button
+            onClick={() => addToCart(product)}
+            className="add-to-cart-btn"
+          >
+            Add to Cart
+          </Button>
+          <i
+            className={`bi bi-heart${isWishlisted ? "-fill" : ""}`}
+            onClick={handleWishlistClick}
+            style={{
+              cursor: "pointer",
+              marginLeft: "10px",
+              color: isWishlisted ? "red" : "black",
+            }}
+          ></i>
+        </Card.Body>
+      </a>
     </Card>
   );
 };
 
 const Carddisplay = ({ category, subcategory }) => {
+  const { addToCart } = useCart();
+  const { wishlist, addToWishlist, removeFromWishlist } = useWishlist();
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [isWishlisted, setIsWishlisted] = useState(false);
+
+  useEffect(() => {
+    if (selectedItem) {
+      setIsWishlisted(wishlist.some((item) => item.name === selectedItem.name));
+    }
+  }, [wishlist, selectedItem]);
+
+  const handleWishlistClick = () => {
+    if (isWishlisted) {
+      removeFromWishlist(selectedItem);
+    } else {
+      addToWishlist(selectedItem);
+    }
+    setIsWishlisted(!isWishlisted);
+  };
+
   if (!category) {
     return <div>No category selected</div>;
   }
@@ -63,13 +86,93 @@ const Carddisplay = ({ category, subcategory }) => {
     ? subcategory.sarees
     : category.subcategories.flatMap((sub) => sub.sarees);
 
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+  };
+
+  const handleClose = () => {
+    setSelectedItem(null);
+  };
+
+  if (selectedItem) {
+    return (
+      <div
+        className="full-screen-overlay"
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "max-content",
+          backgroundColor: "white",
+          zIndex: 1050,
+          overflowY: "auto",
+        }}
+      >
+        <button
+          className="btn btn-secondary mb-4"
+          onClick={handleClose}
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            zIndex: 1100,
+          }}
+        >
+          Close
+        </button>
+        <div className="container my-5 bg-light p-4 rounded shadow-sm">
+          <div className="row">
+            <div className="col-md-6">
+              <img
+              style={{height:"70%",width:"400px"}}
+                src={require(`../assets/${selectedItem.images[0]}`)}
+                alt={selectedItem.name}
+                className="img-fluid"
+              />
+            </div>
+            <div className="col-md-6">
+              <h2>{selectedItem.name}</h2>
+              <p>{selectedItem.description}</p>
+              <p>MRP ₹{selectedItem.price}</p>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "15px",
+                  marginTop: "20px",
+                }}
+              >
+                <button
+                  className="btn btn-primary"
+                  onClick={() => addToCart(selectedItem)}
+                >
+                  Add to Cart
+                </button>
+                <i
+                  className={`bi bi-heart${isWishlisted ? "-fill" : ""}`}
+                  onClick={handleWishlistClick}
+                  style={{
+                    cursor: "pointer",
+                    color: isWishlisted ? "red" : "black",
+                    fontSize: "24px", // Adjust size if needed
+                  }}
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="cart-container">
       <div className="category-section">
         <Row>
           {itemsToDisplay.map((item, index) => (
             <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
-              <ProductCard product={item} />
+              <ProductCard product={item} onItemClick={handleItemClick} />
             </Col>
           ))}
         </Row>

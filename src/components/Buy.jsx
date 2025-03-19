@@ -97,8 +97,9 @@ const Buy = () => {
               <Form.Group controlId="formCVV">
                 <Form.Label>CVV</Form.Label>
                 <Form.Control
-                  type="number"
+                  type="password"
                   placeholder="Enter CVV"
+                  maxLength={"3"}
                   value={cvv}
                   onChange={(e) => setCvv(e.target.value)}
                   isInvalid={!!errors.cvv}
